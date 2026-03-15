@@ -47,7 +47,6 @@
 body {
 
     background-image: url("flowers.gif");
-    background-image: url("images/flowers.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,15 +73,13 @@ a:hover, a:focus, a:active {
     text-decoration: underline;
 }
 
-
-/******************************************************************* body content */
 .page-wrapper {
 	position: relative;
 	margin-top: 0px;
 	margin-left: auto;
 	margin-bottom: 0px;
 	margin-right: auto;
-	padding: 1px; /* messy method of overcoming a rendering bug in mozilla 1.4, maybe others */
+	padding: 1px;
 	font: 8pt/12pt georgia,palatino,times,serif;
 	color: #1f0101;
 	background: #a99cf7 url("flowers.gif") no-repeat top center;
@@ -156,7 +153,7 @@ header {
 	.summary {
         float: left;
         clear: both;
-        margin: 0px 7px 0px 0px; /* shorthand para sa top, right, bottom, left */
+        margin: 0px 7px 0px 0px;
         width: 175px;
 	}
 	
@@ -272,7 +269,7 @@ body::after {
     background-image: url("flowers.gif");
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1; /* para naa sa likod sa tanan content */
+    z-index: -1; 
 }
 
 body::before {
@@ -302,7 +299,7 @@ z-index:9999;
 animation:introhide 2s forwards;
 }
 
-/* HIDE INTRO AFTER 3s */
+
 @keyframes introhide{
 0%{opacity:1;}
 80%{opacity:1;}
@@ -312,7 +309,7 @@ visibility:hidden;
 }
 }
 
-/* MAIN CONTENT APPEAR */
+
 .page-wrapper{
 opacity:0;
 animation:showcontent 2s forwards;
